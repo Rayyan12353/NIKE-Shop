@@ -1,0 +1,503 @@
+body
+{
+    background-color: white;
+    text-align: center;
+    font-family: verdana,thoma,helevertica;
+    font-size: 12px;
+}
+#layout
+{
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 2px;
+}
+#content-wrapper {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vw;
+  background: #000;
+  color: #fff;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-links a {
+  margin-left: 2vw;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+#menu
+{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    position: relative;
+}
+#menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu ul li
+{
+    float: left;
+}
+#menu ul li a
+{
+    float: left;
+    color: #d4d4d4;
+    padding: 12px 20px;
+    text-decoration: none;
+    background: black;
+    border-left: 1px solid #3c4042;
+    border-right: 1px solid #3c4042;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+#menu ul li a:hover
+{
+    color: white;
+    background: #3c4042;
+}
+#runningtext
+{
+    width: 100%;
+    height: 25px;
+    padding-top: 0px;
+    margin: 5px 0 5px 0;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+#sidebar
+{
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    float: right;
+    border-width: 1px;
+    flex: 1 1 30%;
+}
+.widget-home
+{
+    width: 99%;
+    background-bottom: 5px;
+    background: #ffffff;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    font-size: 100%;
+    margin: 0px 0px 5px 0px;
+}
+.widget-home img
+{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+#product
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+#isi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Gambar produk */
+.produk {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect untuk gambar */
+.produk:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul produk */
+#isi h3 {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin: auto;
+}
+
+/* Link produk (membungkus gambar) */
+#isi a {
+  text-decoration: none;
+  color: inherit;
+}
+.isipost
+{
+    background-color: white;
+    width: 98%;
+    height: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.gambardepan
+{
+    float: left;
+    height: 140px;
+    width: 150px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #dddddd;
+}
+.isipost h2
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+#footer
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    clear: both;
+}
+.gambar-produk
+{
+    flex: 1 1 40%;
+}
+.gambar-produk img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.informasi-produk {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.informasi-produk h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.informasi-produk p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.informasi-produk .harga {
+    font-size: 20px;
+    color: #e60000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.informasi-produk button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+.informasi-produk button:hover {
+    background-color: #0056b3;
+}
+.warna-sepatu
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar gambar */
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.warna-sepatu img {
+    width: 100px; /* Ukuran gambar */
+    height: auto;
+    border: 2px solid #ddd; /* Batas luar gambar */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.warna-sepatu img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.ukuran-sepatu 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar gambar */
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.ukuran-sepatu button 
+{
+    width: 65px; /* Ukuran gambar */
+    height: auto;
+    border: 2px solid #ddd; /* Batas luar gambar */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.ukuran-sepatu button:hover 
+{
+    background-color: #ddd;
+    border-color: #999;
+}
+.tombol-beli {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.tombol-beli:hover {
+    background-color: #218838;
+}
+.tombol-pembelian {
+    text-align: center; /* Posisikan tombol di tengah */
+    margin-top: 20px;
+}
+
+.btn-beli {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.btn-beli:hover {
+    background-color: #218838;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.ukuran-jersey {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ukuran-jersey button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000;
+}
+.ukuran-jersey button:hover {
+    background-color: #ddd;
+    border-color: #999;
+}
+/* Kontainer utama */
+
+/* Kontainer isi semua post */
+#produk-nike {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Jarak antar post */
+}
+
+/* Setiap post */
+.isi-produk-nike {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Gambar di dalam post */
+.isi-produk-nike .gambardepan {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Judul utama */
+.isi-produk-nike h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Subjudul */
+.isi-produk-nike h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Paragraf dan teks isi */
+.isi-produk-nike p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Link 'READ MORE' */
+.isi-produk-nike a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.isi-produk-nike a:hover {
+    background-color: #0f6bdc;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  font-size: 1.5rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('nike-banner.jpg'); /* Ganti dengan banner kamu */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 12px;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.hero .btn:hover {
+  background-color: #ddd;
+}
+
+/* Produk Section */
+.produk-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.produk-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+.produk-item {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.produk-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.produk-item h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
